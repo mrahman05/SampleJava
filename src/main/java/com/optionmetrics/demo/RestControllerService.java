@@ -11,6 +11,7 @@ public class RestControllerService {
 
     @GetMapping(name = "test", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity helloWorld() {
+        System.out.println("Hi");
         return ResponseEntity.ok().body("{\"hello\": \"world\"}");
     }
 
